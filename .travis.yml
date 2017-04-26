@@ -12,4 +12,4 @@ addons:
     - g++-4.8
     - clang
 
-script: make clean && make
+script: make clean && make && ./a.out
