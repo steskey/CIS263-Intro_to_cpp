@@ -1,4 +1,4 @@
 language: cpp
-compiler: gcc
+compiler: clang
 
 script: make clean && make
