@@ -8,6 +8,3 @@ TEST_CASE( "My first test", "[testing, my_tests]" ){
 	REQUIRE( 1 == 1 );
 }
 
-TEST_CASE( "Faling test", "[testing, failed_test]" ){
-	REQUIRE( 1 == 0 );
-}
