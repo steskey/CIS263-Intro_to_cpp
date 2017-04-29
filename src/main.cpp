@@ -22,9 +22,17 @@ TEST_CASE( "Testing createString", "[createString]" ){
 	// checking other tests regardless of whether
 	// or not this test passes.
 	CHECK( createString() == "Hello world!");
-} 
+}
 
 TEST_CASE( "Testing createVector", "[createVector]" ){
 	std::vector<std::string> my_vector = createVector();
 	CHECK( my_vector.size() == 3 );
+}
+
+TEST_CASE( "Testing putStringsInVector", "[putStringsInVector]"){
+	CHECK( putStringsInVector(5) == 5);
+	CHECK( putStringsInVector(3) == 3);
+	CHECK( putStringsInVector(0) == 0);
+	CHECK( putStringsInVector(11) == 11);
+
 }
