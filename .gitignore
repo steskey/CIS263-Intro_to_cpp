@@ -1,2 +1,4 @@
 .release_time
 build/
+a.out
+bin/release/
