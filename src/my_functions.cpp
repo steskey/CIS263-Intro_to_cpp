@@ -24,6 +24,6 @@ int putStringsInVector(int num){
 
 void modifyVector(std::vector<int> & vector){
 	for(int i=0; i<vector.size(); i+=5){
-		vector[i] == 42;
+		vector[i] = 42;
 	}
 }

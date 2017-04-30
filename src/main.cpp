@@ -39,7 +39,7 @@ TEST_CASE( "Testing putStringsInVector", "[putStringsInVector]"){
 TEST_CASE( "Testing modifyVector", "[modifyVector]"){
 	std::vector<int> vector;
 	for(int i=0; i<100; i++){
-		vector[i] == i;
+		vector.push_back(i);
 	}
 	modifyVector(vector);
 	for(int i=0;i<100; i+=5){
