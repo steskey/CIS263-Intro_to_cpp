@@ -172,3 +172,11 @@ You must complete the following functions (signatures taken directly from the ``
 3.  ```int putStringsInVector(int num);``` - this function takes one parameter ```int num```.  It calls our previous two functions to get a new vector and to place ```num``` versions of the string returned from ```createString()``` into the vector.  For instance, if we call ```putStringsInVector(42);``` we should have the value ```42``` returned from the function.
 
 4.  ```void modifyVector(std::vector<int> & vector);``` - this function will take a **reference** to a vector of ints.  This means that we can modify the vector as if it were a local variable, and the changes will persist after the function is gone.  To complete this function you should modify every fifth element in the vector to the value ```42```.
+
+### Follow-up Questions for Understanding
+
+1.  How do ```std::vector```s seem to be different from Java's ArrayList<>?
+
+2.  Explain to me what is going on with the ```modifyVector``` function.  Why were we able to modify a parameter and have the change propagate back to the main program?
+
+3.  In class today we talked about creating objects in C++.  We saw how we can create objects on the **head** or the **stack**.  Give one example of each, and explain the difference between creating objects in each of these sections.
