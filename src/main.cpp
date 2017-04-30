@@ -34,5 +34,15 @@ TEST_CASE( "Testing putStringsInVector", "[putStringsInVector]"){
 	CHECK( putStringsInVector(3) == 3);
 	CHECK( putStringsInVector(0) == 0);
 	CHECK( putStringsInVector(11) == 11);
+}
 
+TEST_CASE( "Testing modifyVector", "[modifyVector]"){
+	std::vector<int> vector;
+	for(int i=0; i<100; i++){
+		vector.push_back(i);
+	}
+	modifyVector(vector);
+	for(int i=0;i<100; i+=5){
+		CHECK( vector[i] == 42);
+	}
 }

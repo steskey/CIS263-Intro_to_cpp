@@ -23,10 +23,7 @@ int putStringsInVector(int num){
 }
 
 void modifyVector(std::vector<int> & vector){
-	int count = 0;
-	for(int i:vector){
-		if(count % 5 == 0){
-			i = 42;
-		}
+	for(int i=0; i<vector.size(); i+=5){
+		vector[i] == 42;
 	}
 }
