@@ -137,7 +137,13 @@ Common questions about this process are:
 
   A.  We statically link when we want to run the code on a target system that might not have the libraries we need, or the versions we need.  This ensures our code can still run.
 
+  Q.  ***I've heard that instead of include guards we can use the ```#pragma once``` directive to include a file only once.  Why aren't we using that?***
+
+  A.  This directive isn't part of the C++ standard (at least not yet).  It is true that it is implemented by many compilers, but as it isn't standardized we don't know what issues might arise as we use it with different compilers.
+
   ## Assignment
+
+### Setup
 
   Each of these tasks will be illustrated in class as well.
 
@@ -150,3 +156,19 @@ Common questions about this process are:
 4.  Sync your Github account with Travis-CI by clicking the "Sync" button on the top right of the Travis-CI main page.  This will cause all of your repositories to show up in Travis-CI.
 
 5.  Turn on testing for your copy of this repository by clicking the virtual switch beside the repo in the repo listing on Travis-CI.  Once this is complete, every time you push your repository to Github the tests will automatically run.
+
+### Programming tasks
+
+Now it is time to program in C++!  In class today we learned about creating simple objects in C++.  We learned about how C++ handles strings (```std::string```) and how we can use a vector (```std::vector<>```) to store dynamically sized collections of objects.  This assignment will give you the opportunity to practice these concepts.
+
+The project you cloned has all of the files you need to complete this assignment.  ```main.cpp``` uses the Catch framework to test our code and make sure it is running correctly.  I have included test cases to make sure the code is running correctly.  If a test runs correctly, you can be given full credit for the problem (doesn't mean you always will!).  If a test case fails, you can receive no credit for that problem.  I will be inspecting the code that you turn in to make sure that even though the tests pass that the code doesn't have any other issues.
+
+You must complete the following functions (signatures taken directly from the ```my_functions.h``` file).  As you are implementing code for which an interface is already defined, you will be putting your code in the ```my_functions.cpp``` file.  Please note that this file is already created for you, and is located in the ```src/``` directory, whereas the interface file is in ```include/```.
+
+1.  ```std::string createString();``` - this function takes no parameters and returns a ```std::string``` that holds the value "Hello world!";
+
+2.  ```std::vector<std::string> createVector();``` - this function takes no parameters and returns a new ```std::vector<std::string>``` to hold our strings.
+
+3.  ```int putStringsInVector(int num);``` - this function takes one parameter ```int num```.  It calls our previous two functions to get a new vector and to place ```num``` versions of the string returned from ```createString()``` into the vector.  For instance, if we call ```putStringsInVector(42);``` we should have the value ```42``` returned from the function.
+
+4.  ```void modifyVector(std::vector<int> & vector);``` - this function will take a **reference** to a vector of ints.  This means that we can modify the vector as if it were a local variable, and the changes will persist after the function is gone.  To complete this function you should modify every fifth element in the vector to the value ```42```.
