@@ -21,3 +21,12 @@ int putStringsInVector(int num){
 	}
 	return my_strings.size();
 }
+
+void modifyVector(std::vector<int> & vector){
+	int count = 0;
+	for(int i:vector){
+		if(count % 5 == 0){
+			i = 42;
+		}
+	}
+}
