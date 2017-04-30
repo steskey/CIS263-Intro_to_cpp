@@ -1,4 +1,4 @@
-# CIS263-Intro_to_cpp
+# CIS 263 Homework 1 - **Introduction to C++**
 
 This assignment is meant to help you get used to coding very simple C++ while learning about ```std::vector<>```s, ```std::string```s, git and Github, and software testing.
 
@@ -128,3 +128,25 @@ Common questions about this process are:
   Q. ***If you are using the functions from ```my_functions.cpp``` in your ```main.cpp``` file, how does the compiler know you are using them correctly?***
 
   A.  By including the ```my_functions.h``` header file we include the declarations of the functions we are going to use.  The declaration tells us the name, type, and parameter types (if any) of our functions.  This is all the information the compiler needs.
+
+  Q.  ***Why do we sometimes use quotes ("") and other times use angle brackets (<>) in our #include statements?***
+
+  A.  We use quotes for our local files and angle brackets for system libraries.
+
+  Q.  ***If we can dynamically link to libraries what is the purpose of static linking?***
+
+  A.  We statically link when we want to run the code on a target system that might not have the libraries we need, or the versions we need.  This ensures our code can still run.
+
+  ## Assignment
+
+  Each of these tasks will be illustrated in class as well.
+
+1.  Your first task is to create a Github account, if you do not currently have one.  [Github](https://github.com "Github.com").
+
+2.  Create a Travis-CI account.  [Travis-CI](https://travis-ci.org/ "Travis-CI.org").
+
+3.  At the top of this repository is a "Fork" link (alternatively you can click [Here](https://github.com/irawoodring/CIS263-Intro_to_cpp#fork-destination-box "Link to fork this repo in your own account.")). This will create a forked copy of this repository in your account.
+
+4.  Sync your Github account with Travis-CI by clicking the "Sync" button on the top right of the Travis-CI main page.  This will cause all of your repositories to show up in Travis-CI.
+
+5.  Turn on testing for your copy of this repository by clicking the virtual switch beside the repo in the repo listing on Travis-CI.  Once this is complete, every time you push your repository to Github the tests will automatically run.
