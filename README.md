@@ -175,8 +175,8 @@ You must complete the following functions (signatures taken directly from the ``
 
 ### Follow-up Questions for Understanding
 
-1.  How do ```std::vector```s seem to be different from Java's ArrayList<>?
+1.  How do ```std::vector<>```s seem to be different from Java's ArrayList<>?
 
 2.  Explain to me what is going on with the ```modifyVector``` function.  Why were we able to modify a parameter and have the change propagate back to the main program?
 
-3.  In class today we talked about creating objects in C++.  We saw how we can create objects on the **head** or the **stack**.  Give one example of each, and explain the difference between creating objects in each of these sections.
+3.  In class today we talked about creating objects in C++.  We saw how we can create objects on the **heap** or the **stack**.  Give one example of each, and explain the difference between creating objects in each of these sections.
