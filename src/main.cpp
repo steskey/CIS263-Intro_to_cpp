@@ -26,6 +26,9 @@ TEST_CASE( "Testing createString", "[createString]" ){
 
 TEST_CASE( "Testing createVector", "[createVector]" ){
 	std::vector<std::string> my_vector = createVector();
+	my_vector.push_back(createString());
+	my_vector.push_back(createString());
+	my_vector.push_back(createString());
 	CHECK( my_vector.size() == 3 );
 }
 
